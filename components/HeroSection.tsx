@@ -62,7 +62,7 @@ const HeroSection = () => {
               {/* Hazelnut Oil */}
               <motion.div
                 initial={{ x: 100, y: 200, opacity: 0, rotate: -15 }}
-                animate={{ x: 0, y:150, opacity: 1, rotate: -20 }}
+                animate={{ x: -50, y:130, opacity: 1, rotate: -20 }}
                 transition={{ duration: 0.6, delay: 0 }}
                 whileHover={{ scale: 1.05, rotate: 0, z: 10, y: 90 }}
                 className="absolute -left-8 top-8 z-20"
@@ -85,7 +85,7 @@ const HeroSection = () => {
               {/* Walnut Oil */}
               <motion.div
                 initial={{ x: -100, y: 200, opacity: 0, rotate: 15 }}
-                animate={{ x: 0, y: 133, opacity: 1, rotate: 20 }}
+                animate={{ x: 50, y: 120, opacity: 1, rotate: 20 }}
                 transition={{ duration: 0.6, delay: 0 }}
                 whileHover={{ scale: 1.05, rotate: 0, z: 10 }}
                 style={{ rotate: rotate_3}}

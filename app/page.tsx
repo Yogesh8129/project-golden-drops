@@ -27,7 +27,7 @@ export default function HomePage() {
       <HeroSection/>
 
       {/* Company Values */}
-      <section className="py-16 bg-white">
+      <section className="bg-white pt-[200px] min-h-[80vh]">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
