@@ -64,7 +64,7 @@ const HeroSection = () => {
                 initial={{ x: 100, y: 200, opacity: 0, rotate: -15 }}
                 animate={{ x: -50, y:130, opacity: 1, rotate: -20 }}
                 transition={{ duration: 0.6, delay: 0 }}
-                whileHover={{ scale: 1.05, rotate: 0, z: 10, y: 90 }}
+                whileHover={{ scale: 1.05,  y: 90 }}
                 className="absolute -left-8 top-8 z-20"
                 style={{ rotate: rotate_1}}
               >
@@ -87,7 +87,7 @@ const HeroSection = () => {
                 initial={{ x: -100, y: 200, opacity: 0, rotate: 15 }}
                 animate={{ x: 50, y: 120, opacity: 1, rotate: 20 }}
                 transition={{ duration: 0.6, delay: 0 }}
-                whileHover={{ scale: 1.05, rotate: 0, z: 10 }}
+                whileHover={{ scale: 1.05, y: 90 }}
                 style={{ rotate: rotate_3}}
                 className="absolute -right-8 top-12 z-20"
               >

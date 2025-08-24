@@ -7,6 +7,7 @@ import { Menu, X, ShoppingCart, Search } from 'lucide-react'
 import { useCartStore, useUIStore } from '@/lib/stores'
 import { cn } from '@/lib/utils'
 import Button from '@/components/atoms/Button'
+import {motion} from 'framer-motion'
 
 const navLinks = [
   { path: '/', label: 'Home' },
@@ -36,10 +37,19 @@ const Header = () => {
   const isActive = (path: string) => pathname === path
 
   return (
-    <header 
+    <motion.header
+      initial={{
+        y: -80,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{ duration: 0.5 }}
       className={cn(
-        'sticky top-0 z-50 bg-transparent backdrop-blur-md transition-shadow duration-200',
-        isScrolled && 'shadow-md'
+        "sticky z-50 border border-transparent m-auto top-0 bg-white rounded-full backdrop-blur-md duration-200 w-[80%]",
+        isScrolled && "shadow-md border-yellow-500 top-4"
       )}
     >
       <div className="container mx-auto px-4">
@@ -142,7 +152,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </motion.header>
   )
 }
 
