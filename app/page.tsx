@@ -11,6 +11,7 @@ import productsData from '@/data/products.json'
 import companyData from '@/data/company.json'
 import HeroSection from '@/components/HeroSection';
 import { Product } from '@/lib/types';
+import { ExpandableImageGrid } from '@/components/ExpandableImageGrid';
 
 export default function HomePage() {
   const { items: products, setProducts } = useProductsStore()
@@ -27,7 +28,7 @@ export default function HomePage() {
       <HeroSection/>
 
       {/* Company Values */}
-      <section className="bg-white pt-[200px] min-h-[80vh]">
+      <section className="bg-white pt-[200px] min-h-[65vh]">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -112,6 +113,8 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
+
+      <ExpandableImageGrid/>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-cotanak-green to-cotanak-light">

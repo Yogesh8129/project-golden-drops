@@ -22,9 +22,9 @@ const HeroSection = () => {
           <div className="space-y-8">
             {/* Main Heading */}
             <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.2 }}>
-              <h1 className="text-5xl lg:text-8xl text-center font-light text-cotanak-green-800 leading-tight font-display">
+              <h1 className="text-5xl lg:text-8xl text-center font-light text-gray-600 leading-tight font-display">
                 Premium Natural 
-                <span className="font-semibold">&nbsp;Oils Collection</span>
+                <span className="font-semibold text-cotanak-dark">&nbsp;Oils Collection</span>
                 <br />
                 by {BRAND_NAME}
               </h1>
@@ -40,14 +40,14 @@ const HeroSection = () => {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(22, 163, 74, 0.3)" }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-cotanak-green-700 text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-cotanak-green-800 transition-all duration-300"
+                className="bg-cotanak-green text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-cotanak-dark transition-all duration-300"
               >
                 Shop Now
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="border-2 border-cotanak-green-700 text-cotanak-green-700 px-8 py-4 rounded-full text-sm font-medium hover:bg-cotanak-green-50 transition-all duration-300"
+                className="border-2 border-cotanak-green-700 text-cotanak-green-700 px-8 py-3 rounded-full text-sm font-medium hover:bg-cotanak-green-50 transition-all duration-300"
               >
                 Learn More
               </motion.button>

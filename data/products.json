@@ -11,8 +11,8 @@
       "description": "Premium safflower oil with high smoke point"
     },
     {
-      "id": "specialty",
-      "name": "Specialty Oils",
+      "id": "hazelnut",
+      "name": "Hazelnut Oil",
       "description": "Gourmet oils including hazelnut and walnut"
     }
   ],
@@ -23,7 +23,7 @@
       "category": "sunflower",
       "price": 8.99,
       "size": "1 Liter",
-      "image": "/images/products/sunflower-bottle-1l.png",
+      "image": "/Sunflower_1L.png",
       "description": "Premium quality sunflower oil in a convenient 1-liter bottle. Perfect for daily cooking needs.",
       "features": [
         "High in Vitamin E",
@@ -34,18 +34,82 @@
       "inStock": true
     },
     {
+      "id": "sunflower-1-5l",
+      "name": "Sunflower Oil 1.5L",
+      "category": "sunflower",
+      "price": 12.99,
+      "size": "1.5 Liters",
+      "image": "/Sunflower_1.5L.png",
+      "description": "Medium-sized 1.5-liter bottle of premium sunflower oil for growing families.",
+      "features": [
+        "High in Vitamin E",
+        "Low in saturated fats",
+        "Ideal for frying and baking",
+        "Perfect family size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "sunflower-1-8l",
+      "name": "Sunflower Oil 1.8L",
+      "category": "sunflower",
+      "price": 14.99,
+      "size": "1.8 Liters",
+      "image": "/Sunflower_1.8L.png",
+      "description": "Unique 1.8-liter bottle offering great value for medium-sized households.",
+      "features": [
+        "High in Vitamin E",
+        "Low in saturated fats",
+        "Ideal for frying and baking",
+        "Great value size"
+      ],
+      "inStock": true
+    },
+    {
       "id": "sunflower-2l",
       "name": "Sunflower Oil 2L",
       "category": "sunflower",
       "price": 15.99,
       "size": "2 Liters",
-      "image": "/images/products/sunflower-bottle-2l.png",
+      "image": "/SunFlower_2L.png",
       "description": "Family-sized 2-liter bottle of premium sunflower oil.",
       "features": [
         "High in Vitamin E",
         "Low in saturated fats",
         "Ideal for frying and baking",
-        "Light taste"
+        "Family size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "sunflower-3l",
+      "name": "Sunflower Oil 3L",
+      "category": "sunflower",
+      "price": 22.99,
+      "size": "3 Liters",
+      "image": "/Sunflower_3L.png",
+      "description": "Large 3-liter bottle perfect for busy households and small restaurants.",
+      "features": [
+        "High in Vitamin E",
+        "Low in saturated fats",
+        "Ideal for frying and baking",
+        "Restaurant size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "sunflower-4l",
+      "name": "Sunflower Oil 4L",
+      "category": "sunflower",
+      "price": 28.99,
+      "size": "4 Liters",
+      "image": "/Sunflower_4L.png",
+      "description": "Extra large 4-liter bottle for commercial kitchens and large families.",
+      "features": [
+        "High in Vitamin E",
+        "Low in saturated fats",
+        "Ideal for frying and baking",
+        "Commercial size"
       ],
       "inStock": true
     },
@@ -55,7 +119,7 @@
       "category": "sunflower",
       "price": 35.99,
       "size": "5 Liters",
-      "image": "/images/products/sunflower-bottle-5l.png",
+      "image": "/Sunflower_5L.png",
       "description": "Economy pack 5-liter bottle perfect for restaurants and large families.",
       "features": [
         "High in Vitamin E",
@@ -66,12 +130,92 @@
       "inStock": true
     },
     {
+      "id": "sunflower-5l-tin",
+      "name": "Sunflower Oil 5L Tin",
+      "category": "sunflower",
+      "price": 37.99,
+      "size": "5 Liters",
+      "image": "/Sunflower_5L_tin.png",
+      "description": "Large 5-liter tin of premium sunflower oil for commercial use.",
+      "features": [
+        "High in Vitamin E",
+        "Low in saturated fats",
+        "Ideal for frying and baking",
+        "Commercial tin size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "sunflower-10l-tin",
+      "name": "Sunflower Oil 10L Tin",
+      "category": "sunflower",
+      "price": 69.99,
+      "size": "10 Liters",
+      "image": "/Sunflower_10L_tin.png",
+      "description": "Extra large 10-liter tin perfect for industrial kitchens and bulk buyers.",
+      "features": [
+        "High in Vitamin E",
+        "Low in saturated fats",
+        "Ideal for frying and baking",
+        "Industrial size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "sunflower-18l-tin",
+      "name": "Sunflower Oil 18L Tin",
+      "category": "sunflower",
+      "price": 119.99,
+      "size": "18 Liters",
+      "image": "/Sunflower_18L_tin.png",
+      "description": "Maximum size 18-liter tin for large-scale commercial operations.",
+      "features": [
+        "High in Vitamin E",
+        "Low in saturated fats",
+        "Ideal for frying and baking",
+        "Maximum commercial size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "safflower-1l",
+      "name": "Safflower Oil 1L",
+      "category": "safflower",
+      "price": 12.99,
+      "size": "1 Liter",
+      "image": "/SaffelFlower_1L.png",
+      "description": "Premium safflower oil in a convenient 1-liter bottle.",
+      "features": [
+        "High smoke point",
+        "Rich in omega fatty acids",
+        "Neutral flavor",
+        "Heart-healthy"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "safflower-2l",
+      "name": "Safflower Oil 2L",
+      "category": "safflower",
+      "price": 22.99,
+      "size": "2 Liters",
+      "image": "/SaffelFlower_2L.png",
+      "description": "Family-sized 2-liter bottle of premium safflower oil.",
+      "features": [
+        "High smoke point",
+        "Rich in omega fatty acids",
+        "Neutral flavor",
+        "Family size"
+      ],
+      "inStock": true
+    },
+    {
       "id": "safflower-4l",
       "name": "Safflower Oil 4L",
       "category": "safflower",
       "price": 42.99,
       "size": "4 Liters",
-      "image": "/images/products/safflower-bottle-4l.png",
+      "image": "/SaffelFlower_4L.png",
       "description": "Premium safflower oil with exceptional heat stability.",
       "features": [
         "High smoke point",
@@ -82,34 +226,194 @@
       "inStock": true
     },
     {
+      "id": "safflower-5l",
+      "name": "Safflower Oil 5L",
+      "category": "safflower",
+      "price": 49.99,
+      "size": "5 Liters",
+      "image": "/SaffelFlower_5L.png",
+      "description": "Large 5-liter bottle of premium safflower oil for commercial use.",
+      "features": [
+        "High smoke point",
+        "Rich in omega fatty acids",
+        "Neutral flavor",
+        "Commercial size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "safflower-1l-tin",
+      "name": "Safflower Oil 1L Tin",
+      "category": "safflower",
+      "price": 13.99,
+      "size": "1 Liter",
+      "image": "/SaffelFlower_1L_tin.png",
+      "description": "Premium safflower oil in convenient tin packaging.",
+      "features": [
+        "High smoke point",
+        "Rich in omega fatty acids",
+        "Neutral flavor",
+        "Tin packaging"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "safflower-2l-tin",
+      "name": "Safflower Oil 2L Tin",
+      "category": "safflower",
+      "price": 24.99,
+      "size": "2 Liters",
+      "image": "/SaffelFlower_2L_tin.png",
+      "description": "Family-sized safflower oil in premium tin packaging.",
+      "features": [
+        "High smoke point",
+        "Rich in omega fatty acids",
+        "Neutral flavor",
+        "Family tin size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "safflower-5l-tin",
+      "name": "Safflower Oil 5L Tin",
+      "category": "safflower",
+      "price": 52.99,
+      "size": "5 Liters",
+      "image": "/SaffelFlower_5L_tin.png",
+      "description": "Large 5-liter tin of premium safflower oil for commercial use.",
+      "features": [
+        "High smoke point",
+        "Rich in omega fatty acids",
+        "Neutral flavor",
+        "Commercial tin size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "safflower-18l-tin",
+      "name": "Safflower Oil 18L Tin",
+      "category": "safflower",
+      "price": 159.99,
+      "size": "18 Liters",
+      "image": "/SaffelFlower_18L_tin.png",
+      "description": "Maximum size 18-liter tin for large-scale commercial operations.",
+      "features": [
+        "High smoke point",
+        "Rich in omega fatty acids",
+        "Neutral flavor",
+        "Maximum commercial size"
+      ],
+      "inStock": true
+    },
+    {
       "id": "hazelnut-1l",
-      "name": "Hazelnut Oil 1L Tin",
-      "category": "specialty",
+      "name": "Hazelnut Oil 1L",
+      "category": "hazelnut",
       "price": 24.99,
       "size": "1 Liter",
-      "image": "/images/products/hazelnut-tin-1l.png",
-      "description": "Gourmet hazelnut oil in premium tin packaging.",
+      "image": "/Hazelnut_1L.png",
+      "description": "Gourmet hazelnut oil in premium bottle packaging.",
       "features": [
         "Rich nutty flavor",
         "Perfect for salads",
         "High in monounsaturated fats",
-        "Premium tin packaging"
+        "Premium bottle packaging"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "hazelnut-2l",
+      "name": "Hazelnut Oil 2L",
+      "category": "hazelnut",
+      "price": 44.99,
+      "size": "2 Liters",
+      "image": "/Hazelnut_2L.png",
+      "description": "Family-sized 2-liter bottle of gourmet hazelnut oil.",
+      "features": [
+        "Rich nutty flavor",
+        "Perfect for salads",
+        "High in monounsaturated fats",
+        "Family size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "hazelnut-3l",
+      "name": "Hazelnut Oil 3L",
+      "category": "hazelnut",
+      "price": 64.99,
+      "size": "3 Liters",
+      "image": "/Hazelnut_3L.png",
+      "description": "Large 3-liter bottle of gourmet hazelnut oil for restaurants.",
+      "features": [
+        "Rich nutty flavor",
+        "Perfect for salads",
+        "High in monounsaturated fats",
+        "Restaurant size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "hazelnut-5l",
+      "name": "Hazelnut Oil 5L",
+      "category": "hazelnut",
+      "price": 99.99,
+      "size": "5 Liters",
+      "image": "/Hazelnut_5L.png",
+      "description": "Large 5-liter bottle of gourmet hazelnut oil for commercial use.",
+      "features": [
+        "Rich nutty flavor",
+        "Perfect for salads",
+        "High in monounsaturated fats",
+        "Commercial size"
       ],
       "inStock": true
     },
     {
       "id": "walnut-1l",
-      "name": "Walnut Oil 1L Tin",
-      "category": "specialty",
+      "name": "Walnut Oil 1L",
+      "category": "hazelnut",
       "price": 28.99,
       "size": "1 Liter",
-      "image": "/images/products/walnut-tin-1l.png",
+      "image": "/Walnut_1L.png",
       "description": "Premium walnut oil for gourmet cooking and salads.",
       "features": [
         "Rich in omega-3",
         "Distinctive walnut flavor",
         "Cold-pressed",
-        "Premium tin packaging"
+        "Premium bottle packaging"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "walnut-2l",
+      "name": "Walnut Oil 2L",
+      "category": "hazelnut",
+      "price": 49.99,
+      "size": "2 Liters",
+      "image": "/Walnut_2L.png",
+      "description": "Family-sized 2-liter bottle of premium walnut oil.",
+      "features": [
+        "Rich in omega-3",
+        "Distinctive walnut flavor",
+        "Cold-pressed",
+        "Family size"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "walnut-5l",
+      "name": "Walnut Oil 5L",
+      "category": "hazelnut",
+      "price": 119.99,
+      "size": "5 Liters",
+      "image": "/Walnut_5L.png",
+      "description": "Large 5-liter bottle of premium walnut oil for commercial use.",
+      "features": [
+        "Rich in omega-3",
+        "Distinctive walnut flavor",
+        "Cold-pressed",
+        "Commercial size"
       ],
       "inStock": true
     }

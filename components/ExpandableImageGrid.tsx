@@ -38,18 +38,18 @@ const products = [
   },
 ];
 
-export function HorizontalImageGrid() {
+export function ExpandableImageGrid() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="flex items-center justify-between min-h-screen bg-white p-4 mr-24 ml-24">
-      <h1 className="text-5xl lg:text-9xl text-center font-light text-cotanak-green-800 leading-tight font-display">
+    <div className="flex items-center justify-between min-h-screen bg-white p-4 mr-24 ml-24 gap-11">
+      <h1 className="text-5xl lg:text-9xl text-center font-light text-gray-600 leading-tight font-display">
         <p className="mb-0 p-0">Overwhelmed</p>
         <p>
-          <span className="text-4xl leading-tight ">HEALTH</span>
+          <span className="text-4xl leading-tight text-cotanak-dark">HEALTH</span>
           <br />
         </p>
-        <p>Benifits</p>
+        <p className="text-cotanak-dark">Benifits</p>
       </h1>
       <div className="flex gap-2 h-[90vh] max-w-[50vw] min-w-[50vw]">
         {products.map((product, index) => {
