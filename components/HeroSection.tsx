@@ -5,8 +5,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const HeroSection = () => {
   const { scrollYProgress } = useScroll()
-  const rotate_1 = useTransform(scrollYProgress, [0, 0.2], [-20, 0]); // positive x value
-  const rotate_3 = useTransform(scrollYProgress, [0, 0.2], [20, 0]); // positive x value
+  const rotate_1 = useTransform(scrollYProgress, [0, 0.1], [-20, 0]); // positive x value
+  const rotate_3 = useTransform(scrollYProgress, [0, 0.1], [20, 0]); // positive x value
   return (
     <div className="min-h-screen bg-gradient-to-br from-cream-50 via-white to-cotanak-green-50 relative">
       {/* Background Pattern */}

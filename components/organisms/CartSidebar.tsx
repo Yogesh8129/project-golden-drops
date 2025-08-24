@@ -60,7 +60,7 @@ const CartSidebar = () => {
       {/* Backdrop */}
       <div 
         className={cn(
-          'fixed inset-0 bg-black/50 z-40 transition-opacity duration-300',
+          'fixed inset-0 bg-black/50 z-[999] transition-opacity duration-300',
           isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         )}
         onClick={() => setCartOpen(false)}
@@ -69,7 +69,7 @@ const CartSidebar = () => {
       {/* Sidebar */}
       <div 
         className={cn(
-          'fixed right-0 top-0 h-full w-full sm:w-96 bg-white shadow-xl z-50 transition-transform duration-300',
+          'fixed right-0 top-0 h-full w-full sm:w-[27rem] bg-white shadow-xl z-[9999] transition-transform duration-300',
           isOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >
@@ -112,11 +112,11 @@ const CartSidebar = () => {
                     {/* Product Image */}
                     <div className="relative w-20 h-20 flex-shrink-0 bg-white rounded-lg overflow-hidden">
                       {item.image ? (
-                        <Image 
+                        <Image
                           src={item.image}
                           alt={item.name}
                           fill
-                          className="object-cover"
+                          className="object-contain"
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-green-50 to-white">
