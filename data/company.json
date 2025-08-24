@@ -1,0 +1,77 @@
+{
+  "about": {
+    "title": "About Cotanak",
+    "subtitle": "Premium Edible Oils Since 1985",
+    "description": "Cotanak has been a trusted name in premium edible oils for over three decades. As part of the Altas Group, we are committed to bringing you the finest quality oils that enhance both the flavor and nutritional value of your meals.",
+    "mission": "To provide healthy, natural, and premium quality edible oils that promote well-being and add exceptional taste to every dish.",
+    "vision": "To be the leading provider of premium edible oils, recognized for our commitment to quality, sustainability, and customer satisfaction.",
+    "values": [
+      {
+        "title": "Quality First",
+        "description": "We never compromise on quality, ensuring every bottle meets the highest standards."
+      },
+      {
+        "title": "Natural & Pure",
+        "description": "Our oils are minimally processed to retain their natural goodness."
+      },
+      {
+        "title": "Sustainability",
+        "description": "We work with sustainable farming practices to protect our environment."
+      },
+      {
+        "title": "Customer Focus",
+        "description": "Your satisfaction and health are at the heart of everything we do."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you",
+    "address": {
+      "line1": "Cotanak Edible Oils",
+      "line2": "123 Industrial Avenue",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "postal": "34000"
+    },
+    "phone": "+90 212 555 0123",
+    "email": "info@cotanak.com",
+    "hours": {
+      "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM",
+      "saturday": "Saturday: 9:00 AM - 1:00 PM",
+      "sunday": "Sunday: Closed"
+    }
+  },
+  "certifications": [
+    {
+      "name": "ISO 9001:2015",
+      "description": "Quality Management System"
+    },
+    {
+      "name": "FSSC 22000",
+      "description": "Food Safety System Certification"
+    },
+    {
+      "name": "Halal Certified",
+      "description": "Certified by Turkish Standards Institution"
+    },
+    {
+      "name": "FDA Approved",
+      "description": "U.S. Food and Drug Administration"
+    },
+    {
+      "name": "EU Organic",
+      "description": "European Union Organic Certification"
+    },
+    {
+      "name": "Non-GMO Project",
+      "description": "Non-GMO Project Verified"
+    }
+  ],
+  "statistics": {
+    "yearsInBusiness": 38,
+    "countriesServed": 25,
+    "productsOffered": 12,
+    "satisfiedCustomers": "100,000+"
+  }
+}

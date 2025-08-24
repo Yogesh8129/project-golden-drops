@@ -1,0 +1,117 @@
+{
+  "categories": [
+    {
+      "id": "sunflower",
+      "name": "Sunflower Oil",
+      "description": "Light and healthy sunflower oil perfect for all cooking needs"
+    },
+    {
+      "id": "safflower",
+      "name": "Safflower Oil",
+      "description": "Premium safflower oil with high smoke point"
+    },
+    {
+      "id": "specialty",
+      "name": "Specialty Oils",
+      "description": "Gourmet oils including hazelnut and walnut"
+    }
+  ],
+  "products": [
+    {
+      "id": "sunflower-1l",
+      "name": "Sunflower Oil 1L",
+      "category": "sunflower",
+      "price": 8.99,
+      "size": "1 Liter",
+      "image": "/images/products/sunflower-bottle-1l.png",
+      "description": "Premium quality sunflower oil in a convenient 1-liter bottle. Perfect for daily cooking needs.",
+      "features": [
+        "High in Vitamin E",
+        "Low in saturated fats",
+        "Ideal for frying and baking",
+        "Light taste"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "sunflower-2l",
+      "name": "Sunflower Oil 2L",
+      "category": "sunflower",
+      "price": 15.99,
+      "size": "2 Liters",
+      "image": "/images/products/sunflower-bottle-2l.png",
+      "description": "Family-sized 2-liter bottle of premium sunflower oil.",
+      "features": [
+        "High in Vitamin E",
+        "Low in saturated fats",
+        "Ideal for frying and baking",
+        "Light taste"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "sunflower-5l",
+      "name": "Sunflower Oil 5L",
+      "category": "sunflower",
+      "price": 35.99,
+      "size": "5 Liters",
+      "image": "/images/products/sunflower-bottle-5l.png",
+      "description": "Economy pack 5-liter bottle perfect for restaurants and large families.",
+      "features": [
+        "High in Vitamin E",
+        "Low in saturated fats",
+        "Ideal for frying and baking",
+        "Economy pack"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "safflower-4l",
+      "name": "Safflower Oil 4L",
+      "category": "safflower",
+      "price": 42.99,
+      "size": "4 Liters",
+      "image": "/images/products/safflower-bottle-4l.png",
+      "description": "Premium safflower oil with exceptional heat stability.",
+      "features": [
+        "High smoke point",
+        "Rich in omega fatty acids",
+        "Neutral flavor",
+        "Heart-healthy"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "hazelnut-1l",
+      "name": "Hazelnut Oil 1L Tin",
+      "category": "specialty",
+      "price": 24.99,
+      "size": "1 Liter",
+      "image": "/images/products/hazelnut-tin-1l.png",
+      "description": "Gourmet hazelnut oil in premium tin packaging.",
+      "features": [
+        "Rich nutty flavor",
+        "Perfect for salads",
+        "High in monounsaturated fats",
+        "Premium tin packaging"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "walnut-1l",
+      "name": "Walnut Oil 1L Tin",
+      "category": "specialty",
+      "price": 28.99,
+      "size": "1 Liter",
+      "image": "/images/products/walnut-tin-1l.png",
+      "description": "Premium walnut oil for gourmet cooking and salads.",
+      "features": [
+        "Rich in omega-3",
+        "Distinctive walnut flavor",
+        "Cold-pressed",
+        "Premium tin packaging"
+      ],
+      "inStock": true
+    }
+  ]
+}
