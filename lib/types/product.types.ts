@@ -23,11 +23,9 @@ export interface NutritionalInfo {
 }
 
 export type ProductCategory = 
-  | 'sunflower-oil'
-  | 'safflower-oil'
-  | 'hazelnut-oil'
-  | 'walnut-oil'
-  | 'specialty-oils'
+  | 'sunflower'
+  | 'safflower'
+  | 'specialty'
 
 export interface ProductFilters {
   category: string

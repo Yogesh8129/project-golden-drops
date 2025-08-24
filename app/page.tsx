@@ -9,12 +9,13 @@ import ProductCard from '@/components/molecules/ProductCard'
 import Button from '@/components/atoms/Button'
 import productsData from '@/data/products.json'
 import companyData from '@/data/company.json'
+import { Product } from '@/lib/types/product.types'
 
 export default function HomePage() {
   const { items: products, setProducts } = useProductsStore()
 
   useEffect(() => {
-    setProducts(productsData.products)
+    setProducts(productsData.products as Product[])
   }, [setProducts])
 
   const featuredProducts = products.slice(0, 3)
