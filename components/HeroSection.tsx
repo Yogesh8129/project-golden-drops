@@ -8,7 +8,7 @@ const HeroSection = () => {
   const rotate_1 = useTransform(scrollYProgress, [0, 0.1], [-20, 0]); // positive x value
   const rotate_3 = useTransform(scrollYProgress, [0, 0.1], [20, 0]); // positive x value
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cream-50 via-white to-cotanak-green-50 relative">
+    <div className="bg-gradient-to-br from-cream-50 via-white to-cotanak-green-50 relative">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-32 h-32 bg-cotanak-green-200 rounded-full blur-3xl"></div>
