@@ -1,13 +1,16 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ShoppingCart, Search } from "lucide-react";
 import { useCartStore, useUIStore } from "@/lib/stores";
 import { cn } from "@/lib/utils";
 import Button from "@/components/atoms/Button";
+import Logo from "@/components/atoms/Logo";
 import { motion } from "framer-motion";
+import { useScrollDirection } from "@/lib/hooks/useScrollDirection";
+import { HEADER_CONFIG } from "@/lib/utils/constants";
 
 const navLinks = [
   { path: "/", label: "Home" },
@@ -20,15 +23,25 @@ const Header = () => {
   const pathname = usePathname();
   const { totalItems, toggleCart } = useCartStore();
   const { isMobileMenuOpen, toggleMobileMenu, setMobileMenuOpen } = useUIStore();
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  
+  // Use the scroll hook for all scroll-related state
+  const { isScrolled, isAtTop } = useScrollDirection();
+  
+  // Determine logo size based on scroll state
+  const logoSize = useMemo(() => {
+    if (typeof window !== 'undefined' && window.innerWidth < HEADER_CONFIG.BREAKPOINTS.mobile) {
+      return HEADER_CONFIG.LOGO_SIZES.mobile;
+    }
+    return isScrolled ? HEADER_CONFIG.LOGO_SIZES.collapsed : HEADER_CONFIG.LOGO_SIZES.expanded;
+  }, [isScrolled]);
+  
+  // Calculate dynamic header height
+  const headerHeight = useMemo(() => {
+    const baseHeight = isScrolled 
+      ? HEADER_CONFIG.COLLAPSED_HEIGHT 
+      : HEADER_CONFIG.EXPANDED_HEIGHT;
+    return `${baseHeight}px`;
+  }, [isScrolled]);
 
   useEffect(() => {
     setMobileMenuOpen(false);
@@ -47,18 +60,26 @@ const Header = () => {
         opacity: 1,
       }}
       transition={{ duration: 0.5 }}
+      style={{
+        height: headerHeight,
+        transition: `all ${HEADER_CONFIG.TRANSITION_DURATION}ms ease-in-out`
+      }}
       className={cn(
-        "sticky z-50 border border-transparent m-auto top-0 bg-white rounded-full backdrop-blur-md duration-200 w-[80%]",
-        isScrolled && "shadow-md border-yellow-500 top-4"
+        "sticky z-50 border border-transparent m-auto top-0 bg-white rounded-full backdrop-blur-md w-[80%] flex items-center",
+        isScrolled && "shadow-md border-yellow-500 top-4",
+        !isAtTop && "bg-white/95"
       )}
     >
-      <div className="flex items-center justify-between h-16 px-4">
-        {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2 group">
-          <span className="text-2xl font-bold bg-gradient-to-r from-cotanak-green to-cotanak-light bg-clip-text text-transparent">
-            Golden Drops
-          </span>
-        </Link>
+      <div className="flex items-center justify-between w-full h-full px-6">
+        {/* Logo with adaptive behavior */}
+        <Logo 
+          size={logoSize}
+          variant="adaptive"
+          isScrolled={isScrolled}
+          priority
+          animated
+          className="transition-all duration-300"
+        />
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
