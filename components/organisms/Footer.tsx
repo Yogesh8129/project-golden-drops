@@ -16,46 +16,7 @@ const Footer = () => {
               {companyData.about.subtitle}
             </p>
             <div className="flex space-x-4">
-              {companyData.socialMedia?.facebook && (
-                <a 
-                  href={companyData.socialMedia.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-cotanak-green transition-colors"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-              )}
-              {companyData.socialMedia?.instagram && (
-                <a 
-                  href={companyData.socialMedia.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-cotanak-green transition-colors"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
-              )}
-              {companyData.socialMedia?.twitter && (
-                <a 
-                  href={companyData.socialMedia.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-cotanak-green transition-colors"
-                >
-                  <Twitter className="w-5 h-5" />
-                </a>
-              )}
-              {companyData.socialMedia?.linkedin && (
-                <a 
-                  href={companyData.socialMedia.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-cotanak-green transition-colors"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-              )}
+              {/* Social media links - TODO: Add socialMedia to company data */}
             </div>
           </div>
 
