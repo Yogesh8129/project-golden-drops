@@ -33,7 +33,7 @@ const ProductCard = ({ product, onViewDetails }: ProductCardProps) => {
             src={product.image}
             alt={product.name}
             fill
-            className="object-cover group-hover:scale-110 transition-transform duration-300"
+            className="object-contain group-hover:scale-110 transition-transform duration-300"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center">

@@ -24,7 +24,7 @@ export default function ProductsPage() {
   const [showFilters, setShowFilters] = useState(false)
 
   useEffect(() => {
-    setProducts(productsData.products)
+    setProducts(productsData.products as Product[])
   }, [setProducts])
 
   useEffect(() => {
@@ -36,10 +36,7 @@ export default function ProductsPage() {
 
   const filteredProducts = getFilteredProducts()
   
-  const categories = useMemo(() => {
-    const uniqueCategories = [...new Set(items.map(p => p.category))]
-    return uniqueCategories
-  }, [items])
+  const categories = productsData.categories;
 
   const handleViewDetails = (product: Product) => {
     // Implement product detail modal or navigation
@@ -132,8 +129,8 @@ export default function ProductsPage() {
                   >
                     <option value="">All Categories</option>
                     {categories.map(cat => (
-                      <option key={cat} value={cat}>
-                        {cat.replace('-', ' ').charAt(0).toUpperCase() + cat.slice(1).replace('-', ' ')}
+                      <option key={cat.id} value={cat.id}>
+                        {cat.name}
                       </option>
                     ))}
                   </select>
